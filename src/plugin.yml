@@ -1,0 +1,7 @@
+name: BRRRRRRClicker
+main: de.mrvinrsk.brrrrrrclicker.main.Clicker
+author: TotalRational
+version: 0.1
+api-version: 1.17
+
+commands:
