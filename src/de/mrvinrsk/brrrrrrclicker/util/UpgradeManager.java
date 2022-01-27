@@ -11,10 +11,11 @@ public class UpgradeManager {
 
     /**
      * Get an instance of this class.
+     *
      * @return the instance.
      */
     public static UpgradeManager getInstance() {
-        if(manager == null) {
+        if (manager == null) {
             manager = new UpgradeManager();
         }
 
@@ -28,8 +29,8 @@ public class UpgradeManager {
         return upgrades;
     }
 
-    public static void registerUpgrade(ClickerUpgrade upgrade) {
-        UpgradeManager.upgrades.add(upgrade);
+    public void registerUpgrade(ClickerUpgrade upgrade) {
+        upgrades.add(upgrade);
     }
 
     public int getUpgradeLevel(Player p, ClickerUpgrade upgrade) {
